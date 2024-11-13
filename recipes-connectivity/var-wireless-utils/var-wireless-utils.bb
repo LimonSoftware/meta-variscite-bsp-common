@@ -27,8 +27,6 @@ FILES:${PN} = " \
 
 RDEPENDS:${PN} = "base-files"
 
-S = "${WORKDIR}"
-
 do_install() {
 	install -d ${D}${sysconfdir}/wifi
 	install -m 0755 ${WORKDIR}/variscite-wifi ${D}/${sysconfdir}/wifi
