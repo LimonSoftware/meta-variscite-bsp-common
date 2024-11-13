@@ -28,8 +28,6 @@ RDEPENDS:${PN} = " \
 	ot-daemon \
 "
 
-S = "${WORKDIR}"
-
 do_install() {
 	install -d ${D}${sysconfdir}/bluetooth/variscite-bt.d
 	install -m 0755 ${WORKDIR}/iw612-bt ${D}/${sysconfdir}/bluetooth/variscite-bt.d

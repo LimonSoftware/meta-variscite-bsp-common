@@ -15,8 +15,6 @@ FILES:${PN} = " \
 
 RDEPENDS:${PN} = "i2c-tools udev-extraconf libgpiod-tools var-gpio-utils var-wireless-utils usleep"
 
-S = "${WORKDIR}"
-
 do_install() {
 	install -d ${D}${sysconfdir}/wifi/variscite-wifi.d
 	install -m 0755 ${WORKDIR}/bcm43xx-wifi ${D}/${sysconfdir}/wifi/variscite-wifi.d
