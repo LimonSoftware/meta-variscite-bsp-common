@@ -26,6 +26,8 @@ FILES:${PN} = " \
 "
 
 RDEPENDS:${PN} = "base-files"
+# The script that brings up the wireless interface needs bc
+RDEPENDS:${PN} += "bc"
 
 do_install() {
 	install -d ${D}${sysconfdir}/wifi
